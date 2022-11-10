@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+html {
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+
+.header {
+    height: 80px;
+    margin: 0;
+    background-color: darkgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    width: fit-content;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-img {
+    width: 64px;
+    height: 64px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-txt {
+    font-size: 32px;
+    color: white;
+    background: linear-gradient(to right, red 0%, red 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Main */
+
+.main {
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* Card */
+
+.card {
+    width: 216px;
+    height: 256px;
+    border: 2px black solid;
+    box-shadow: 5px 5px 15px 7px #888888;
+}
+
+.card-img {
+    margin: 10px;
+    width: 256px;
+    height: 128px;
+}
+
+.card-text {
+    margin: 10px;
+    font: bold;
+    font-size: 24px;
+    color: black;
+}
+
+.card-button {
+    width: 216px;
+    height: 60px;
+    border-top: 1px black solid;
+}
+
+/* Button */
+
+.button {
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    border: transparent;
+    transition: transform .3s ease, opacity .3s linear;
+}
+
+.button:hover {
+    opacity: 75%;
+}
+
+.button:active {
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+.footer {
+    height: 70px;
+    background-color: darkgrey;
+}
+
+.author-txt {
+    font: bold;
+    font-size: 16px;
+}
+
+.author-img {
+    width: 64px;
+    height: 48px;
+}
+
+/* Utilities */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
 }
