@@ -1,6 +1,6 @@
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Card from './Components/Card';
+import Pokemons from './Components/Pokemons';
 import './App.css';
 
 function App() {
@@ -10,10 +10,7 @@ function App() {
       <main className="main">
         <section className="container">
           <article className="pokemons">
-            <Card
-              url="pokeball.svg"
-              name="Pokedex"
-            />
+            <Pokemons/>
           </article>
         </section>
       </main>
